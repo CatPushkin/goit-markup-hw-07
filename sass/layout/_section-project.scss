@@ -5,6 +5,7 @@
 .project-list {
   display: flex;
   justify-content: space-between;
+  @extend %list;
 }
 .no-gap {
   display: block;

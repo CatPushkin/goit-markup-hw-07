@@ -1,13 +1,14 @@
 .reason-list {
   display: flex;
   margin-right: -30px;
+  @extend %list;
 }
 .reason-list__item {
   margin-right: 30px;
   flex-basis: calc((100% - 120px) / 4);
-}
-.reason-list__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .reason-list__wrap {
   display: flex;

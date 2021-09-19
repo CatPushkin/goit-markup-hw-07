@@ -1,5 +1,6 @@
 .social-list {
   display: flex;
+  @extend %list;
 }
 
 .social-list__item:not(:last-child) {
@@ -14,16 +15,17 @@
   border-radius: 50%;
   background-color: #ffffff;
   transition: background-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: #ffffff;
-}
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--accent-color);
-}
+
 .social-list__icon {
   fill: #afb1b8;
   transition: fill var(--transition);
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: #ffffff;
+  }
 }

@@ -13,11 +13,17 @@
   align-items: center;
 }
 
-.checkbox:checked + .check-label > .icon-check {
-  background-color: var(--accent-color);
-  border: none;
-}
-.checkbox:focus-within + .check-label > .icon-check {
-  background-color: var(--accent-color);
-  border: none;
+.checkbox {
+  &:checked + .check-label {
+    & > .icon-check {
+      background-color: var(--accent-color);
+      border: none;
+    }
+  }
+  &:focus-within + .check-label {
+    & > .icon-check {
+      background-color: var(--accent-color);
+      border: none;
+    }
+  }
 }
