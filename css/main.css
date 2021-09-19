@@ -12,11 +12,11 @@
   padding: 0;
 }
 
-.link {
+.logo, .nav-list__link, .header-contact__link, .social-list__link, .clients-list__link, .footer-address__link, .footer-content__link {
   text-decoration: none;
 }
 
-.visually-hidden {
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;

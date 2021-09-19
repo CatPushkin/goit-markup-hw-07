@@ -12,6 +12,7 @@
   height: 92px;
 }
 .clients-list__link {
+  @extend %link;
   width: 100%;
   height: 100%;
   display: flex;

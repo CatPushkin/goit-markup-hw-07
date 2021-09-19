@@ -14,6 +14,7 @@
 }
 
 .checkbox {
+  @extend %visually-hidden;
   &:checked + .check-label {
     & > .icon-check {
       background-color: var(--accent-color);
